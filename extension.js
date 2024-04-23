@@ -1598,6 +1598,7 @@ game.import("extension",function(lib,game,ui,get,ai,_status){return {name:"守�
             "fire_henhuo":{
                 audio:"ext:守林人/audio:3",
                 usable:1,
+                derivation:"fire_henhuo2",
                 group:["fire_henhuo_rage"],
                 trigger:{
                     player:"damageBefore",
@@ -2622,6 +2623,7 @@ player.storage.fire_gaosi=false
                 "_priority":0,
             },
             "fire_panbing":{
+				derivation:"fire_fukong",
                 group:"fire_panbing_lost",
                 subSkill:{
                     lost:{
@@ -2687,6 +2689,7 @@ player.storage.fire_gaosi=false
                 "_priority":0,
             },
             "fire_zhuixue":{
+				derivation:"fire_fukong",
                 audio:"ext:firewatch/audio:2",
                 enable:"phaseUse",
                 usable:1,
@@ -2759,6 +2762,7 @@ player.storage.fire_gaosi=false
                 "_priority":1500,
             },
             "fire_liechao":{
+				derivation:"fire_fukong",
                 audio:"ext:守林人/audio:3",
                 trigger:{
                     source:"damageBegin2",
@@ -6483,6 +6487,7 @@ return (get.attitude(player,event.player)>0);
                 "_priority":0,
             },
             "fire_jianding":{
+				derivation:"fire_diaowang",
                 forced:true,
                 charlotte:true,
                 init:(player)=>{
@@ -6728,6 +6733,7 @@ return (get.attitude(player,event.player)>0);
                 "_priority":0,
             },
             "fire_yuanjian":{
+				derivation:"fire_diaowang",
                 audio:"ext:firewatch:2",
                 trigger:{
                     player:"phaseZhunbeiBegin",
@@ -9479,6 +9485,7 @@ if(event.target.contains(player))return false;
                 "_priority":0,
             },
             "fire_qinlue":{
+				
                 priority:100,
                 trigger:{
                     source:"damageBegin1",
@@ -9503,6 +9510,7 @@ if(event.target.contains(player))return false;
                 "_priority":10000,
             },
             "fire_xvgong":{
+
                 enable:"chooseToUse",
                 selectCard:-1,
                 filterCard:function(event,card){
@@ -9560,6 +9568,7 @@ if(event.target.contains(player))return false;
                 "_priority":0,
             },
             "fire_dianguo":{
+				derivation:"fire_diaowang",
                 audio:"ext:守林人/audio:2",
                 forced:true,
                 ai:{
@@ -10820,6 +10829,7 @@ player.storage.fire_sheshen=false
                 popup:false,
             },
             "fire_liming":{
+				derivation:["fire_weiyi","fire_tani","fire_heyun"],
                 mod:{
                     aiValue:function (player, card, num) {
                         if (get.name(card) != 'wuxie') return;
@@ -14745,6 +14755,7 @@ else{
                 "_priority":0,
             },
             "fire_tideng":{
+				derivation:"fire_huli",
                 skillAnimation:true,
                 animationColor:"water",
                 audio:"ext:守林人:2",
