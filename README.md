@@ -11,7 +11,7 @@ his 'noname' 's extension is about A GameCharacter: Arknights's Firewatch
 
 3、本人对桌游了解不多，对强度把控完全基于此拓展本身，如有设计缺陷还请谅解。
 
-4、由于个人技术原因，本拓展可能有很多bug，如需反馈请至B站ID：纸鸢千鹤_VelopeVoice相关专栏下，您的反馈也是我继续更新的动力。
+4、由于个人技术原因，本拓展可能有很多bug，如需反馈请至B站ID：纸鸢函音_VelopeVoice相关专栏下，您的反馈也是我继续更新的动力。
 
 2024.4.23 v0.1.7 beta
 
